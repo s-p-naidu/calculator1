@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mainframe">
+        <div id="inputframe">
+            <input type="text" id="input" disabled>
+        </div>
+        <div>
+            <div id="buttons">
+                <button onclick="perform('C')">C</button>
+                <button onclick="perform('root')">√x</button>
+                <button onclick="perform('square')">x²</button>
+                <button onclick="perform('Backspace')"><=</button>
+            </div>
+            <div id="downframe">
+                <div id="numberframe">
+                    <button onclick="perform('1')">1</button>
+                    <button onclick="perform('2')">2</button>
+                    <button onclick="perform('3')">3</button>
+                    <button onclick="perform('4')">4</button>
+                    <button onclick="perform('5')">5</button>
+                    <button onclick="perform('6')">6</button>
+                    <button onclick="perform('7')">7</button>
+                    <button onclick="perform('8')">8</button>
+                    <button onclick="perform('9')">9</button>
+                    <button onclick="perform('.')">.</button>
+                    <button onclick="perform('0')">0</button>
+                    <button onclick="perform('=')">=</button>
+                </div>
+                <div id="sideframe">
+                    <button onclick="perform('+')">+</button>
+                    <button onclick="perform('-')">-</button>
+                    <button onclick="perform('*')">X</button>
+                    <button onclick="perform('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
